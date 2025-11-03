@@ -1,154 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>CV — Arshia Lashgari</title>
-<style>
-  body {
-    font-family: "Poppins", sans-serif;
-    background-color: #0e1117;
-    color: #e6edf3;
-    margin: 0;
-    padding: 40px;
-    line-height: 1.6;
-  }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arshia Lashgari — Portfolio</title>
 
-  h1, h2, h3 {
-    color: #58a6ff;
-    margin-top: 40px;
-  }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 
-  .section {
-    margin-bottom: 40px;
-  }
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      margin: 0;
+      padding: 0;
+    }
 
-  .hover-text {
-    transition: transform 0.25s ease, color 0.25s ease;
-    display: inline-block;
-  }
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      background: #161b22;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      overflow: hidden;
+      padding: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
 
-  .hover-text:hover {
-    transform: scale(1.07);
-    color: #ffd700;
-  }
+    .profile-pic {
+      flex: 1 1 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-  .header {
-    text-align: center;
-    border-bottom: 2px solid #30363d;
-    padding-bottom: 20px;
-    margin-bottom: 40px;
-  }
+    .profile-pic img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #30363d;
+      transition: transform 0.3s ease;
+    }
 
-  a {
-    color: #58a6ff;
-    text-decoration: none;
-  }
+    .profile-pic img:hover {
+      transform: scale(1.08);
+    }
 
-  a:hover {
-    text-decoration: underline;
-  }
+    .info {
+      flex: 2 1 500px;
+    }
 
-  .skills, .languages {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
+    h1 {
+      color: #f0f6fc;
+      font-size: 2.4em;
+      margin-bottom: 10px;
+      transition: transform 0.25s ease;
+      display: inline-block;
+    }
 
-  .tag {
-    background: #161b22;
-    padding: 6px 10px;
-    border-radius: 6px;
-    font-size: 14px;
-    border: 1px solid #30363d;
-  }
+    h1:hover {
+      transform: scale(1.05);
+      color: #58a6ff;
+    }
 
-  footer {
-    text-align: center;
-    border-top: 1px solid #30363d;
-    margin-top: 40px;
-    padding-top: 20px;
-    color: #8b949e;
-  }
-</style>
+    p, li {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    h2 {
+      color: #58a6ff;
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 6px;
+      margin-top: 40px;
+    }
+
+    .hover-text {
+      transition: transform 0.25s ease, color 0.25s ease;
+      display: inline-block;
+    }
+
+    .hover-text:hover {
+      transform: scale(1.05);
+      color: #ffd700;
+    }
+
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .tag {
+      background: #21262d;
+      padding: 6px 10px;
+      border-radius: 6px;
+      border: 1px solid #30363d;
+      font-size: 13px;
+      margin: 4px;
+      display: inline-block;
+      transition: transform 0.25s ease;
+    }
+
+    .tag:hover {
+      transform: scale(1.07);
+      background-color: #30363d;
+    }
+
+    footer {
+      text-align: center;
+      color: #8b949e;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
 </head>
-
 <body>
-  <div class="header">
-    <h1 class="hover-text">Arshia Lashgari</h1>
-    <p class="hover-text">Student | Full-Stack Developer | Creative Engineer</p>
-    <p>Email: <a href="mailto:Lashgariarshia@gmail.com">Lashgariarshia@gmail.com</a> | Napoli, Italy</p>
-    <p>Phone: +39 351 561 4887 | Born: 14 Feb 2004 | Nationality: Iranian</p>
-    <p>
-      <strong>GitHub:</strong> <a href="https://github.com/arshial">github.com/arshial</a> |
-      <strong>Website:</strong> <a href="https://arshial.github.io">arshial.github.io</a>
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Summary</h2>
-    <p class="hover-text">
-      Motivated computer science student with experience in web development and hospitality. Skilled in Python, Java, SQL, and Angular, with strong problem-solving and teamwork abilities. Adaptable, responsible, and fluent in four languages, combining technical precision with excellent communication.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Experience</h2>
-    <h3 class="hover-text">Full Stack Web Developer — I.B.S (Oct 2023 – Feb 2024)</h3>
-    <ul>
-      <li>Developed full-stack web applications using Java, SQL, and Angular.</li>
-      <li>Collaborated with cross-functional teams and designed RESTful APIs.</li>
-      <li>Participated in the full software lifecycle from design to deployment.</li>
-    </ul>
-
-    <h3 class="hover-text">Banconista — Bar Les Artistes (Jun 2024 – Present)</h3>
-    <ul>
-      <li>Served customers, handled payments, and maintained a clean environment.</li>
-      <li>Managed setup and closing procedures with accuracy and speed.</li>
-    </ul>
-
-    <h3 class="hover-text">Bartender — Bar Mater (Jun 2022 – Sep 2022)</h3>
-    <ul>
-      <li>Prepared beverages and cocktails maintaining quality and consistency.</li>
-      <li>Ensured hygiene and customer satisfaction during rush hours.</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Education</h2>
-    <p class="hover-text"><strong>Federico II University, Naples</strong> — Bachelor of Computer Science (Sep 2024 – Present)</p>
-    <p class="hover-text"><strong>I.S.I.S. Antonio Serra</strong> — High School Diploma in Tourism (2019 – 2023)</p>
-  </div>
-
-  <div class="section">
-    <h2>Skills</h2>
-    <div class="skills">
-      <span class="tag hover-text">Python</span>
-      <span class="tag hover-text">Java</span>
-      <span class="tag hover-text">SQL</span>
-      <span class="tag hover-text">Angular</span>
-      <span class="tag hover-text">FastAPI</span>
-      <span class="tag hover-text">Teamwork</span>
-      <span class="tag hover-text">Problem Solving</span>
-      <span class="tag hover-text">Machine Learning</span>
-      <span class="tag hover-text">Photoshop</span>
-      <span class="tag hover-text">Adobe Premiere</span>
+  <div class="container">
+    <div class="profile-pic">
+      <img src="https://github.com/arshial/arshial.github.io/blob/arshial-patch-1/IMG_3913.jpeg?raw=true" alt="Arshia Lashgari">
+    </div>
+    <div class="info">
+      <h1>Arshia Lashgari</h1>
+      <p class="hover-text">Full-Stack Developer | Student | Creative Engineer</p>
+      <p>Email: <a href="mailto:Lashgariarshia@gmail.com">Lashgariarshia@gmail.com</a> | Napoli, Italy</p>
+      <p>📞 +39 351 561 4887 | Born: 14 Feb 2004 | 🇮🇷 Iranian</p>
+      <p>
+        <strong>GitHub:</strong> <a href="https://github.com/arshial">github.com/arshial</a> |
+        <strong>Website:</strong> <a href="https://arshial.github.io">arshial.github.io</a>
+      </p>
     </div>
   </div>
 
-  <div class="section">
-    <h2>Languages</h2>
-    <div class="languages">
-      <span class="tag hover-text">Farsi — Native</span>
-      <span class="tag hover-text">Turkish — Native</span>
-      <span class="tag hover-text">Italian — Advanced</span>
-      <span class="tag hover-text">English — Intermediate</span>
-      <span class="tag hover-text">German — Elementary</span>
+  <div class="container">
+    <div>
+      <h2>Summary</h2>
+      <p class="hover-text">
+        Motivated computer science student with experience in web development and hospitality. 
+        Skilled in Python, Java, SQL, and Angular. Adaptable, creative, and fluent in four languages — 
+        combining technical logic with design intuition.
+      </p>
+
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>I.B.S (2023–2024)</strong> — Full Stack Developer (Java, SQL, Angular)</li>
+        <li><strong>Bar Les Artistes (2024–Present)</strong> — Banconista</li>
+        <li><strong>Bar Mater (2022)</strong> — Bartender</li>
+      </ul>
+
+      <h2>Education</h2>
+      <p><strong>Federico II University, Naples</strong> — Bachelor of Computer Science (2024–Present)</p>
+      <p><strong>I.S.I.S. Antonio Serra</strong> — High School Diploma in Tourism (2019–2023)</p>
+
+      <h2>Skills</h2>
+      <div>
+        <span class="tag">Python</span>
+        <span class="tag">Java</span>
+        <span class="tag">SQL</span>
+        <span class="tag">Angular</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Teamwork</span>
+        <span class="tag">Problem Solving</span>
+        <span class="tag">Photoshop</span>
+        <span class="tag">Premiere Pro</span>
+      </div>
+
+      <h2>Languages</h2>
+      <div>
+        <span class="tag">Farsi — Native</span>
+        <span class="tag">Turkish — Native</span>
+        <span class="tag">Italian — Advanced</span>
+        <span class="tag">English — Intermediate</span>
+        <span class="tag">German — Elementary</span>
+      </div>
     </div>
   </div>
 
   <footer>
-    <p>⭐️ “Code the logic, design the emotion.” — Arshia Lashgari</p>
+    ⭐ “Code the logic, design the emotion.” — Arshia Lashgari
   </footer>
 </body>
 </html>
