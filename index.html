@@ -1,91 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arshia Lashgari — Portfolio</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #0b0b0b, #1b0133);
-      color: #eee;
-      text-align: center;
-      padding: 50px 15px;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-    h2 {
-      color: #9b59b6;
-    }
-    .stack img {
-      width: 60px;
-      margin: 10px;
-      vertical-align: middle;
-    }
-    a {
-      color: #9b59b6;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover {
-      color: #ff9ff3;
-    }
-    .projects {
-      margin-top: 40px;
-    }
-    .project {
-      margin: 25px 0;
-    }
-    footer {
-      margin-top: 60px;
-      color: #888;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CV — Arshia Lashgari</title>
+<style>
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #0e1117;
+    color: #e6edf3;
+    margin: 0;
+    padding: 40px;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3 {
+    color: #58a6ff;
+    margin-top: 40px;
+  }
+
+  .section {
+    margin-bottom: 40px;
+  }
+
+  .hover-text {
+    transition: transform 0.25s ease, color 0.25s ease;
+    display: inline-block;
+  }
+
+  .hover-text:hover {
+    transform: scale(1.07);
+    color: #ffd700;
+  }
+
+  .header {
+    text-align: center;
+    border-bottom: 2px solid #30363d;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+
+  a {
+    color: #58a6ff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .skills, .languages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .tag {
+    background: #161b22;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    border: 1px solid #30363d;
+  }
+
+  footer {
+    text-align: center;
+    border-top: 1px solid #30363d;
+    margin-top: 40px;
+    padding-top: 20px;
+    color: #8b949e;
+  }
+</style>
 </head>
+
 <body>
-  <h1>Arshia Lashgari</h1>
-  <h2>Full-stack Developer & Creative Engineer</h2>
-  <p>Python • Java • Angular • SQL • Photoshop • Premiere</p>
-
-  <div class="stack">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="SQL">
-  </div>
-
-  <div class="projects">
-    <h2>🚀 Featured Projects</h2>
-
-    <div class="project">
-      <strong>E-commerce App</strong> – Angular + Spring Boot + PostgreSQL  
-      <br>🔗 <a href="https://github.com/arshial/ecommerce-app">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <strong>Bio-oil ML Model</strong> – Python + Scikit-learn  
-      <br>🔗 <a href="https://github.com/arshial/bio-oil-ml">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <strong>Bar Order App</strong> – Mobile/Web ordering system  
-      <br>🔗 <a href="https://github.com/arshial/bar-order-app">View on GitHub</a>
-    </div>
-  </div>
-
-  <div class="contact">
-    <h2>📫 Connect with Me</h2>
+  <div class="header">
+    <h1 class="hover-text">Arshia Lashgari</h1>
+    <p class="hover-text">Student | Full-Stack Developer | Creative Engineer</p>
+    <p>Email: <a href="mailto:Lashgariarshia@gmail.com">Lashgariarshia@gmail.com</a> | Napoli, Italy</p>
+    <p>Phone: +39 351 561 4887 | Born: 14 Feb 2004 | Nationality: Iranian</p>
     <p>
-      <a href="https://www.linkedin.com/in/arshia-lashgari-54690a310/">LinkedIn</a> |
-      <a href="https://youtube.com/@arshiali5451">YouTube</a> |
-      <a href="mailto:YOUR_EMAIL@gmail.com">Email</a>
+      <strong>GitHub:</strong> <a href="https://github.com/arshial">github.com/arshial</a> |
+      <strong>Website:</strong> <a href="https://arshial.github.io">arshial.github.io</a>
     </p>
   </div>
 
+  <div class="section">
+    <h2>Summary</h2>
+    <p class="hover-text">
+      Motivated computer science student with experience in web development and hospitality. Skilled in Python, Java, SQL, and Angular, with strong problem-solving and teamwork abilities. Adaptable, responsible, and fluent in four languages, combining technical precision with excellent communication.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Experience</h2>
+    <h3 class="hover-text">Full Stack Web Developer — I.B.S (Oct 2023 – Feb 2024)</h3>
+    <ul>
+      <li>Developed full-stack web applications using Java, SQL, and Angular.</li>
+      <li>Collaborated with cross-functional teams and designed RESTful APIs.</li>
+      <li>Participated in the full software lifecycle from design to deployment.</li>
+    </ul>
+
+    <h3 class="hover-text">Banconista — Bar Les Artistes (Jun 2024 – Present)</h3>
+    <ul>
+      <li>Served customers, handled payments, and maintained a clean environment.</li>
+      <li>Managed setup and closing procedures with accuracy and speed.</li>
+    </ul>
+
+    <h3 class="hover-text">Bartender — Bar Mater (Jun 2022 – Sep 2022)</h3>
+    <ul>
+      <li>Prepared beverages and cocktails maintaining quality and consistency.</li>
+      <li>Ensured hygiene and customer satisfaction during rush hours.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <p class="hover-text"><strong>Federico II University, Naples</strong> — Bachelor of Computer Science (Sep 2024 – Present)</p>
+    <p class="hover-text"><strong>I.S.I.S. Antonio Serra</strong> — High School Diploma in Tourism (2019 – 2023)</p>
+  </div>
+
+  <div class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span class="tag hover-text">Python</span>
+      <span class="tag hover-text">Java</span>
+      <span class="tag hover-text">SQL</span>
+      <span class="tag hover-text">Angular</span>
+      <span class="tag hover-text">FastAPI</span>
+      <span class="tag hover-text">Teamwork</span>
+      <span class="tag hover-text">Problem Solving</span>
+      <span class="tag hover-text">Machine Learning</span>
+      <span class="tag hover-text">Photoshop</span>
+      <span class="tag hover-text">Adobe Premiere</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Languages</h2>
+    <div class="languages">
+      <span class="tag hover-text">Farsi — Native</span>
+      <span class="tag hover-text">Turkish — Native</span>
+      <span class="tag hover-text">Italian — Advanced</span>
+      <span class="tag hover-text">English — Intermediate</span>
+      <span class="tag hover-text">German — Elementary</span>
+    </div>
+  </div>
+
   <footer>
-    <p>⭐️ "Code the logic, design the emotion."</p>
+    <p>⭐️ “Code the logic, design the emotion.” — Arshia Lashgari</p>
   </footer>
 </body>
 </html>
